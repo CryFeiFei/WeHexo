@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container" scroll-x="true">
+  <towxml nodes="{{article}}"/>
+</view>
+
