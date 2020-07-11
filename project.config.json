@@ -25,7 +25,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
 	"appid": "wxcc0fb31077ebf031",
-	"projectname": "QtDocument",
+	"projectname": "WeHexo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
