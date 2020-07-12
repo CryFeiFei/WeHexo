@@ -3,7 +3,7 @@ const app = getApp();
 
 import config from '../../utils/config.js'
 
-var url = config.getUrl
+var urlBase = config.getUrl
 
 Page({
 
@@ -19,8 +19,10 @@ Page({
    */
   onLoad: function (options) {
     var self = this
+    var path = options.path
+    console.log(path)
     wx.request({
-      url: 'https://cryfeifei.top/api/articles/Qt释放线程资源的一些工程上的方法.json', //仅为示例，并非真实的接口地址
+      url: urlBase + path, //仅为示例，并非真实的接口地址
       data: {
         x: '',
         y: ''

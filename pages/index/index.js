@@ -14,6 +14,15 @@ Page({
     praiseList: {}
   },
 
+  postClick: function (option) {
+    var self = this;
+    var title =  option.target.dataset.title
+    var path = option.target.dataset.path
+    wx.navigateTo({
+      url: '../artical/artical?path=' + path,
+    })
+  },
+
   onLoad: function() {
     var self = this;
     wx.request({

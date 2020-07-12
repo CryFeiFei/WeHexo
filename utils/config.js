@@ -1,5 +1,5 @@
 
-var URL = "https://www.cryfeifei.top";
+var URL = "https://www.cryfeifei.top/";
 
 // 更多信息 https://www.npmjs.com/package/hexo-generator-restful
 

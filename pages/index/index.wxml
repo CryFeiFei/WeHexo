@@ -1,12 +1,6 @@
 <!--index.wxml-->
-<block wx:for="{{articallist}}">
-  <view> {{index}}: </view>
-  <view> {{item}} </view>
-</block>
-
 <view class="praiseText">
     <block wx:key="id" wx:for="{{praiseList}}">
-        <view src="{{item.title}}" class="title">{{item.title}}</view>
-        <view src="{{item.path}}" class="path">{{item.path}}</view>
+        <view src="{{item.title}}" class="title" bindtap="postClick" data-title="{{item.title}}" data-path="{{item.path}}">{{item.title}}</view>
     </block>
 </view>

@@ -23,8 +23,8 @@
         "text": "列表"
       },
       {
-        "pagePath": "pages/artical/artical",
-        "text": "文章页"
+        "pagePath":"pages/logs/logs",
+        "text":"测试"
       }
     ]
   }

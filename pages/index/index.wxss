@@ -1,0 +1,19 @@
+.title {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 24rpx 0;
+  overflow: hidden;
+}
+
+/* 文章列表样式 */
+
+.post-list {
+  margin-bottom: 24rpx;
+}
+
+.post-item {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 24rpx 0;
+  overflow: hidden;
+}
