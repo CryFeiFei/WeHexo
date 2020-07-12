@@ -1,6 +1,10 @@
 // pages/artical/artical.js
 const app = getApp();
 
+import config from '../../utils/config.js'
+
+var url = config.getUrl
+
 Page({
 
   /**

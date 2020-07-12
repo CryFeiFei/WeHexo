@@ -1,13 +1,23 @@
+
+import config from '../../utils/config.js'
+var wxRequest = require('../../utils/wxRequest.js')
+var urlPosts = config.getPosts
+
+// var getTopHotPostsRequest = wxRequest.getRequest(Api.getTopHotPosts(tab));
+// getTopHotPostsRequest.then(response =>{
+
 const app = getApp();
 Page({
   data: {
     isLoading: true, // 判断是否尚在加载中
-    article: {} // 内容数据
+    articallist: {}, // 内容数据
+    praiseList: {}
   },
+
   onLoad: function() {
-    var self = this
+    var self = this;
     wx.request({
-      url: 'https://cryfeifei.top/api/articles/Qt释放线程资源的一些工程上的方法.json', //仅为示例，并非真实的接口地址
+      url: urlPosts, //仅为示例，并非真实的接口地址
       data: {
         x: '',
         y: ''
@@ -16,24 +26,48 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        //console.log(res.data)
-        let content = res.data['content']
-        console.log(content)
+        console.log(res.data)
+        var pl = {
 
-        let result = app.towxml(content, 'html', {
-          // 相对资源的base路径
-          base: 'https://cryfeifei.top',
-          theme: 'light', // 主题，默认`light`
-        });
+        }
+        for (var index = 0; index < res.data.length; index++){
+          var articalInfo = res.data[index]
+          console.log(articalInfo)
+          console.log(articalInfo['title'])
+          pl[index] = {
+            title : articalInfo['title'], 
+            path : articalInfo['path']
+          }
+        }
 
-        console.log(result)
-
-        // 更新解析数据
         self.setData({
-          article: result,
-          isLoading: false
-        });
+          praiseList:pl
+        })
+
       }
+    }),    
+    // var getPostsRequest = wxRequest.getRequest(urlPosts);
+    // getPostsRequest.then(response => {
+    //   var dataTest = response.data;
+    //   if (response.data.status == '200' ){
+    //     var res = response.data;
+    //     self.setData({
+    //       displaySwiper: "block"
+    //     });
+    //   } else {
+    //     self.setData({
+    //     });
+    //   }
+    // }).catch(function (response) {
+    //   console.log(response);
+    //   self.setData({
+    //   });
+    // }).finally(function () { });
+    
+
+    self.setData({
+      articallist: [1,2,3],
+      isLoading: false
     })
   }
 })

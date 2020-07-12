@@ -1,5 +1,12 @@
 <!--index.wxml-->
-<view class="container" scroll-x="true">
-  <towxml nodes="{{article}}"/>
-</view>
+<block wx:for="{{articallist}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>
 
+<view class="praiseText">
+    <block wx:key="id" wx:for="{{praiseList}}">
+        <view src="{{item.title}}" class="title">{{item.title}}</view>
+        <view src="{{item.path}}" class="path">{{item.path}}</view>
+    </block>
+</view>
