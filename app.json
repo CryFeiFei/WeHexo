@@ -2,12 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/artical/artical"
+    "pages/artical/artical",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "Qt那些事儿",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -20,11 +21,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "列表"
+        "text": "列表",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_select.png"
       },
       {
-        "pagePath":"pages/logs/logs",
-        "text":"测试"
+        "pagePath": "pages/about/about",
+        "text": "关于我",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about_select.png"
       }
     ]
   }
