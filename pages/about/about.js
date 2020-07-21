@@ -1,11 +1,14 @@
 // pages/about/about.js
+
+import about from '../../utils/about.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+
 
   },
 
@@ -15,7 +18,7 @@ Page({
   onLoad: function (options) {
     var self = this;
     self.setData({
-      wechat:123,
+      wechat: about.getWeChat,
     })
 
   },

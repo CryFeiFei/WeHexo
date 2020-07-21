@@ -1,19 +1,13 @@
 .title {
   display: flex;
-  border-bottom: 1px solid #eee;
-  padding: 24rpx 0;
+  border: 1px solid;
+  padding: 24rpx;
   overflow: hidden;
+  margin: 10rpx;
+  border-radius: 10px;/*圆角弧度*/
+  border-color:lightgrey;
+  background-color: lightgrey;
 }
 
 /* 文章列表样式 */
 
-.post-list {
-  margin-bottom: 24rpx;
-}
-
-.post-item {
-  display: flex;
-  border-bottom: 1px solid #eee;
-  padding: 24rpx 0;
-  overflow: hidden;
-}

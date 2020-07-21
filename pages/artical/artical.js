@@ -37,7 +37,7 @@ Page({
 
         let result = app.towxml(content, 'html', {
           // 相对资源的base路径
-          base: 'https://cryfeifei.top',
+          base: 'https://cryfeifei.cn',
           theme: 'light', // 主题，默认`light`
         });
 
