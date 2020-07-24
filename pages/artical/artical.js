@@ -3,7 +3,9 @@ const app = getApp();
 
 import config from '../../utils/config.js'
 
-var urlBase = config.getUrl
+var URL = config.getUrl
+
+var BaseUrl = config.getBaseUrl
 
 Page({
 
@@ -22,7 +24,7 @@ Page({
     var path = options.path
     console.log(path)
     wx.request({
-      url: urlBase + path, //仅为示例，并非真实的接口地址
+      url: URL + path, //仅为示例，并非真实的接口地址
       data: {
         x: '',
         y: ''
@@ -37,7 +39,7 @@ Page({
 
         let result = app.towxml(content, 'html', {
           // 相对资源的base路径
-          base: 'https://cryfeifei.cn',
+          base: BaseUrl,
           theme: 'light', // 主题，默认`light`
         });
 

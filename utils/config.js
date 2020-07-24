@@ -1,5 +1,8 @@
 
-var URL = "https://www.cryfeifei.cn/";
+var BaseUrl = "https://www.cryfeifei.cn";
+
+//用于请求的
+var URL =  BaseUrl + "/";
 
 // 更多信息 https://www.npmjs.com/package/hexo-generator-restful
 
@@ -53,5 +56,6 @@ var URL_CATEGORIES = URL + '/api/categories.json'
 
 export default {
   getUrl : URL,
-  getPosts : URL_POSTS 
+  getBaseUrl : BaseUrl,
+  getPosts : URL_POSTS
 }
