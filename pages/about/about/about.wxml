@@ -1,0 +1,11 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+	<view class='text-center margin-bottom text-lg  text-grey'>关于Qt那些事儿</view>
+	<view class='text-content'>
+		<view>欢迎使用我的第一个小程序</view>
+		<view class='margin-top-sm'>本人WPS For Linux的开发，平时自己写写博客，突然迸发个想法，想把博客内容无缝迁移到小程序上。所以就有了本项目</view>
+		<view class='margin-top-sm'>作为一个写了五年CPP的老鸟，也是第一次写小程序，感觉还是很有意思的，所以会有一些代码不太规范的地方，还请谅解</view>
+		<view class='margin-top-sm'>项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，可以在GitHub里给个star</view>
+		<!-- <view class='margin-top-sm'>该项目你可以用到除组件库小程序的任何项目。作者我也是花了时间和精力的，我不希望你拷贝一份，做一些修改发布就变成了一个独立的项目，当然！扩展再发布是可以的，但前提是注明一下我这个原作者٩(๑❛ᴗ❛๑)۶</view> -->
+		<view class='margin-top-sm'>更多功能敬请期待！</view>
+	</view>
+</view>

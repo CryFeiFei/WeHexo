@@ -3,7 +3,11 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/artical/artical",
-    "pages/about/about"
+    "pages/about/about/about",
+    "pages/about/log/log",
+    "pages/about/test/list",
+    "pages/about/test/filter",
+    "pages/about/home/home"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +30,7 @@
         "selectedIconPath": "images/index_select.png"
       },
       {
-        "pagePath": "pages/about/about",
+        "pagePath": "pages/about/home/home",
         "text": "关于我",
         "iconPath": "images/about.png",
         "selectedIconPath": "images/about_select.png"

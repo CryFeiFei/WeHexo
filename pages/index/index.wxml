@@ -1,6 +1,8 @@
 <!--index.wxml-->
-<view class="praiseText">
+  <!-- <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow"> -->
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     <block wx:key="id" wx:for="{{praiseList}}">
-        <view src="{{item.title}}" class="title" bindtap="postClick" data-title="{{item.title}}" data-path="{{item.path}}">{{item.title}}</view>
+        <view src="{{item.title}}" class="cu-item arrow" bindtap="postClick" data-title="{{item.title}}" data-path="{{item.path}}">{{item.title}}</view>
     </block>
 </view>

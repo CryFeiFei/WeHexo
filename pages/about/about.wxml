@@ -1,4 +1,0 @@
-<!--pages/about/about.wxml-->
-<view class="WeChat">
-  <text>微信：{{wechat}}</text>
-</view>
