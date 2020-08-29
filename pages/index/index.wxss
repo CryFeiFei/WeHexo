@@ -9,5 +9,49 @@
   background-color: lightgrey;
 }
 
+
+/* .title {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 24rpx 0;
+  overflow: hidden;
+} */
+
 /* 文章列表样式 */
 
+.post-list {
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+.post-item {
+  display: flex;
+  /* border-bottom: 1px solid #eee; */
+  font-size: larger;
+  padding-top: 40rpx;
+  padding-left: 24rpx;
+  padding-bottom: 10rpx;
+  height: 100rpx;
+  font-weight: bold;
+}
+
+.post-info{
+  display: flex;
+  height: 40rpx;
+  justify-content: space-between;
+  padding-right: 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #eee;
+  align-items:flex-end;
+}
+
+.post-author{
+  width:90rpx;
+  font-size: 80%;
+  color:lightgray;
+}
+
+.post-time{
+  color: black;
+  font-size: 80%;
+}

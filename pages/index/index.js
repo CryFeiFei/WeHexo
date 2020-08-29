@@ -45,8 +45,16 @@ Page({
           console.log(articalInfo['title'])
           pl[index] = {
             title : articalInfo['title'], 
-            path : articalInfo['path']
+            path : articalInfo['path'],
+            date : articalInfo['date'],
           }
+          var cates = "";
+          for(var cateindex = 0; cateindex < articalInfo['categories'].length; cateindex++)
+          {
+            cates += articalInfo['categories'][cateindex]['name'];
+            cates += "   "
+          }
+          pl[index].categorie = cates;
         }
 
         self.setData({
@@ -79,6 +87,7 @@ Page({
       isLoading: false
     })
   },
+
       /**
    * 用户点击右上角分享
    */
@@ -87,7 +96,7 @@ Page({
   },
 
   //shareTimeline 分享到朋友圈
-  onShareTimeline : function () {
+  shareTimeline : function () {
 
   }
 })

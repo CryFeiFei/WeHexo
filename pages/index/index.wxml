@@ -1,8 +1,12 @@
 <!--index.wxml-->
   <!-- <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     <view class="cu-item arrow"> -->
-<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+<view class="post-list">
     <block wx:key="id" wx:for="{{praiseList}}">
-        <view src="{{item.title}}" class="cu-item arrow" bindtap="postClick" data-title="{{item.title}}" data-path="{{item.path}}">{{item.title}}</view>
+        <view src="{{item.title}}" class="post-item" bindtap="postClick" data-title="{{item.title}}" data-path="{{item.path}}">{{item.title}}</view>
+        <view class="post-info">
+            <view class="post-author"></view>
+            <view class="post-time">{{item.categorie}}</view>
+        </view>
     </block>
 </view>

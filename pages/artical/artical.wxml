@@ -1,4 +1,24 @@
 <!--pages/artical/artical.wxml-->
+<view >
+    <loading wx:if="{{showLoading}}">加载中</loading>
+</view>
+
+<view class="articaltitle">
+  <view class="padding">{{articaleTitle}}</view>
+</view>
+<!-- 
+作者 -->
+<view class="artical-author">
+	<view class="cu-item">
+		<view class="content">
+			  <view class="cu-avatar lg round margin-left">
+					<text>张</text>
+				</view>
+			<text class="text-grey">	    张小飞</text>
+		</view>
+	</view>
+</view>
+
 <view class="container" scroll-x="true">
   <towxml nodes="{{article}}"/>
 </view>

@@ -111,23 +111,18 @@
         <view>* 建议先备份，再全局替换标签。</view>
       </view>
     </view>
-  </view>
+  </view> -->
   <view class="cu-item text-green">
     <view class="bg-green content shadow">
       <view class="cu-capsule radius">
-        <view class="cu-tag bg-white text-green">v2.0.3</view>
-        <view class="cu-tag line-white">2019/01/06</view>
+        <view class="cu-tag bg-white text-green">v2.0.2</view>
+        <view class="cu-tag line-white">2020/08/29</view>
       </view>
       <view class="margin-top-sm text-content">
-        <view>1.修复一些单位错误（带输入框的操作条）</view>
-        <view>2.纠正一些单词拼写...</view>
-        <view>3.抛弃icon标签，改回text标签的写法</view>
-        <view>4.抛弃px单位的样式文件</view>
-        <view>5.优化一些组件的字体大小</view>
-        <view>6.新增两种加载样式</view>
+        <view>调整下文章的布局样式</view>
       </view>
     </view>
-  </view> -->
+  </view>
   <view class="cu-item text-green">
     <view class="bg-green content shadow">
       <view class="cu-capsule radius">

@@ -10,7 +10,6 @@
 @import '/towxml/style/theme/dark.wxss';
 
 .container {
-  font-size: 32rpx;
   line-height: 64rpx;
   letter-spacing: 1px;
   overflow: hidden;
@@ -18,4 +17,18 @@
   position: relative;
   margin: 0;
   display: block;
+  height: 100%;
+  padding: 0;
+}
+
+.artical-author{
+  background-color: white;
+  padding-top: 24rpx;
+}
+
+.articaltitle{
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #41cd52;
+  background-color:white;
 }

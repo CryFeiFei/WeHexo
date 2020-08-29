@@ -13,7 +13,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showLoading: true
   },
 
 
@@ -60,7 +60,8 @@ Page({
         // 更新解析数据
         self.setData({
           article: result,
-          isLoading: false
+          showLoading:false,
+          articaleTitle: res.data['title'],
         });
       }
     })
@@ -108,7 +109,7 @@ Page({
 
   },
 
-  /**
+    /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
@@ -116,7 +117,19 @@ Page({
   },
 
   //shareTimeline 分享到朋友圈
-  onShareTimeline : function () {
+  shareTimeline : function () {
 
+  },
+  
+  showLoading: function () {
+    this.setData({
+      showLoading: true
+    })
+  },
+
+  cancelLoading: function () {
+    this.setData({
+      showLoading: false
+    })
   }
 })
