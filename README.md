@@ -25,7 +25,7 @@ npm install hexo-generator-restful --save
 相关插件说明  https://github.com/yscoder/hexo-generator-restful
 
 # 预览效果
-![WeHexo](wehexo.jpg)
+![WeHexo](https://gitee.com/cryfeifei/WeHexo/raw/master/wehexo.jpg)
 
 # TODO
 
@@ -43,6 +43,8 @@ npm install hexo-generator-restful --save
 - [ ] 分类
 - [ ] 主界面置顶
 - [ ] 代码高亮
+- [ ] 首页分页优化，一次性加载太多会比较慢
+- [ ] 
 
 
 # 第三方库
