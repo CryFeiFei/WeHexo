@@ -3,6 +3,10 @@
 
 本项目是Hexo版本的微信小程序。旨在帮助写Hexo博客的人有自己的微信小程序，能够在微信上自动同步Hexo博客。
 
+## 国内镜像
+
+https://gitee.com/cryfeifei/WeHexo
+
 
 # 配置
 
@@ -35,10 +39,10 @@ npm install hexo-generator-restful --save
 
 ## 真正的TODO
 
-- [] 文章页美化
-- [] 分类
-- [] 主界面置顶
-- [] 代码高亮
+- [ ] 文章页美化
+- [ ] 分类
+- [ ] 主界面置顶
+- [ ] 代码高亮
 
 
 # 第三方库
